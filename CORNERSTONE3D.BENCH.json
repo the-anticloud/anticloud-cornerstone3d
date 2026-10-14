@@ -1,0 +1,1044 @@
+{
+  "category": "MEDICAL_HEALTH",
+  "checks": {
+    "01_loc_files": {
+      "check": "LOC / file census",
+      "detail": {
+        "blank_lines": 53852,
+        "code_files": 2454,
+        "comment_lines": 56119,
+        "effective_loc": 314284,
+        "total_lines": 424255
+      },
+      "metric": "loc",
+      "pass": true,
+      "threshold": "> 1000 effective LOC",
+      "value": 314284
+    },
+    "02_licence": {
+      "check": "Licence classification gate",
+      "detail": {
+        "first_line": "MIT License",
+        "licence_class": "A",
+        "licence_file": "LICENSE",
+        "licence_sha256": "a3c95915d211a6f2b99970d47ca89c54d513605e9629a8957229a28f0bc5a111",
+        "rationale": "MIT detected -> class A (may vendor+relicense w/ attribution)",
+        "redistribution": "may vendor, modify, relicense and append Anticommons, push as ours WITH attribution"
+      },
+      "pass": true,
+      "threshold": "licence_class in {A,B,C}; A required for push",
+      "value": "A"
+    },
+    "03_dependency_scan": {
+      "check": "Dependency inventory + forbidden-AI gate",
+      "detail": {
+        "declared_dependency_count": 111,
+        "dependencies": {
+          "npm_direct": [
+            "@arethetypeswrong/cli",
+            "@babel/core",
+            "@babel/plugin-external-helpers",
+            "@babel/plugin-proposal-class-properties",
+            "@babel/plugin-proposal-object-rest-spread",
+            "@babel/plugin-transform-class-static-block",
+            "@babel/plugin-transform-private-methods",
+            "@babel/plugin-transform-runtime",
+            "@babel/plugin-transform-typescript",
+            "@babel/preset-env",
+            "@babel/preset-react",
+            "@babel/preset-typescript",
+            "@babel/runtime",
+            "@babel/runtime-corejs3",
+            "@cornerstonejs/calculate-suv",
+            "@istanbuljs/nyc-config-typescript",
+            "@microsoft/api-extractor",
+            "@microsoft/tsdoc",
+            "@playwright/test",
+            "@prettier/plugin-oxc",
+            "@rollup/plugin-babel",
+            "@rollup/plugin-json",
+            "@rollup/plugin-node-resolve",
+            "@rollup/plugin-typescript",
+            "@rspack/cli",
+            "@rspack/core",
+            "@types/dom-webcodecs",
+            "@types/emscripten",
+            "@types/jasmine",
+            "@types/jest",
+            "@types/karma",
+            "@types/node",
+            "@types/react",
+            "@types/react-dom",
+            "@vitest/browser-playwright",
+            "@webgpu/types",
+            "acorn",
+            "acorn-jsx",
+            "ajv",
+            "autoprefixer",
+            "babel-loader",
+            "babel-plugin-istanbul",
+            "babel-plugin-transform-import-meta",
+            "chai",
+            "clean-webpack-plugin",
+            "commander",
+            "concat",
+            "core-js",
+            "coverage-istanbul-loader",
+            "cross-env",
+            "css-loader",
+            "cssnano",
+            "dicomweb-client",
+            "docdash",
+            "dpdm",
+            "execa",
+            "exports-loader",
+            "file-loader",
+            "follow-redirects",
+            "fs-extra",
+            "glob",
+            "html-webpack-plugin",
+            "husky",
+            "jasmine",
+            "jest",
+            "jest-canvas-mock",
+            "jest-environment-jsdom",
+            "jest-junit",
+            "karma",
+            "karma-chrome-launcher",
+            "karma-coverage",
+            "karma-jasmine",
+            "karma-junit-reporter",
+            "karma-spec-reporter",
+            "karma-webpack",
+            "lint-staged",
+            "nyc",
+            "open-cli",
+            "oxlint",
+            "path-browserify",
+            "playwright-test-coverage",
+            "postcss",
+            "postcss-import",
+            "postcss-loader",
+            "postcss-preset-env",
+            "prettier",
+            "publint",
+            "puppeteer",
+            "resemblejs",
+            "rollup",
+            "semver",
+            "shader-loader",
+            "shelljs",
+            "shx",
+            "sinon",
+            "source-map-support",
+            "style-loader",
+            "stylelint",
+            "stylelint-config-recommended",
+            "ts-loader",
+            "ts-node",
+            "tsc-alias",
+            "typescript",
+            "url-loader",
+            "vitest",
+            "webpack",
+            "webpack-bundle-analyzer",
+            "webpack-cli",
+            "webpack-dev-server",
+            "webpack-merge",
+            "xml2js"
+          ]
+        },
+        "forbidden_ai_deps": [],
+        "manifests_found": [
+          "package.json"
+        ]
+      },
+      "pass": true,
+      "threshold": "no pytorch/torch/transformers",
+      "value": 111
+    },
+    "04_sbom": {
+      "check": "SBOM generation",
+      "components_file_inline": [
+        {
+          "name": "package.json",
+          "purl": null,
+          "source": "local-file"
+        },
+        {
+          "name": "@arethetypeswrong/cli",
+          "purl": "pkg:npm/@arethetypeswrong/cli",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@babel/core",
+          "purl": "pkg:npm/@babel/core",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@babel/plugin-external-helpers",
+          "purl": "pkg:npm/@babel/plugin-external-helpers",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@babel/plugin-proposal-class-properties",
+          "purl": "pkg:npm/@babel/plugin-proposal-class-properties",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@babel/plugin-proposal-object-rest-spread",
+          "purl": "pkg:npm/@babel/plugin-proposal-object-rest-spread",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@babel/plugin-transform-class-static-block",
+          "purl": "pkg:npm/@babel/plugin-transform-class-static-block",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@babel/plugin-transform-private-methods",
+          "purl": "pkg:npm/@babel/plugin-transform-private-methods",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@babel/plugin-transform-runtime",
+          "purl": "pkg:npm/@babel/plugin-transform-runtime",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@babel/plugin-transform-typescript",
+          "purl": "pkg:npm/@babel/plugin-transform-typescript",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@babel/preset-env",
+          "purl": "pkg:npm/@babel/preset-env",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@babel/preset-react",
+          "purl": "pkg:npm/@babel/preset-react",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@babel/preset-typescript",
+          "purl": "pkg:npm/@babel/preset-typescript",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@babel/runtime",
+          "purl": "pkg:npm/@babel/runtime",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@babel/runtime-corejs3",
+          "purl": "pkg:npm/@babel/runtime-corejs3",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@cornerstonejs/calculate-suv",
+          "purl": "pkg:npm/@cornerstonejs/calculate-suv",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@istanbuljs/nyc-config-typescript",
+          "purl": "pkg:npm/@istanbuljs/nyc-config-typescript",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@microsoft/api-extractor",
+          "purl": "pkg:npm/@microsoft/api-extractor",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@microsoft/tsdoc",
+          "purl": "pkg:npm/@microsoft/tsdoc",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@playwright/test",
+          "purl": "pkg:npm/@playwright/test",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@prettier/plugin-oxc",
+          "purl": "pkg:npm/@prettier/plugin-oxc",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@rollup/plugin-babel",
+          "purl": "pkg:npm/@rollup/plugin-babel",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@rollup/plugin-json",
+          "purl": "pkg:npm/@rollup/plugin-json",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@rollup/plugin-node-resolve",
+          "purl": "pkg:npm/@rollup/plugin-node-resolve",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@rollup/plugin-typescript",
+          "purl": "pkg:npm/@rollup/plugin-typescript",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@rspack/cli",
+          "purl": "pkg:npm/@rspack/cli",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@rspack/core",
+          "purl": "pkg:npm/@rspack/core",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@types/dom-webcodecs",
+          "purl": "pkg:npm/@types/dom-webcodecs",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@types/emscripten",
+          "purl": "pkg:npm/@types/emscripten",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@types/jasmine",
+          "purl": "pkg:npm/@types/jasmine",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@types/jest",
+          "purl": "pkg:npm/@types/jest",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@types/karma",
+          "purl": "pkg:npm/@types/karma",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@types/node",
+          "purl": "pkg:npm/@types/node",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@types/react",
+          "purl": "pkg:npm/@types/react",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@types/react-dom",
+          "purl": "pkg:npm/@types/react-dom",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@vitest/browser-playwright",
+          "purl": "pkg:npm/@vitest/browser-playwright",
+          "source": "npm_direct"
+        },
+        {
+          "name": "@webgpu/types",
+          "purl": "pkg:npm/@webgpu/types",
+          "source": "npm_direct"
+        },
+        {
+          "name": "acorn",
+          "purl": "pkg:npm/acorn",
+          "source": "npm_direct"
+        },
+        {
+          "name": "acorn-jsx",
+          "purl": "pkg:npm/acorn-jsx",
+          "source": "npm_direct"
+        },
+        {
+          "name": "ajv",
+          "purl": "pkg:npm/ajv",
+          "source": "npm_direct"
+        },
+        {
+          "name": "autoprefixer",
+          "purl": "pkg:npm/autoprefixer",
+          "source": "npm_direct"
+        },
+        {
+          "name": "babel-loader",
+          "purl": "pkg:npm/babel-loader",
+          "source": "npm_direct"
+        },
+        {
+          "name": "babel-plugin-istanbul",
+          "purl": "pkg:npm/babel-plugin-istanbul",
+          "source": "npm_direct"
+        },
+        {
+          "name": "babel-plugin-transform-import-meta",
+          "purl": "pkg:npm/babel-plugin-transform-import-meta",
+          "source": "npm_direct"
+        },
+        {
+          "name": "chai",
+          "purl": "pkg:npm/chai",
+          "source": "npm_direct"
+        },
+        {
+          "name": "clean-webpack-plugin",
+          "purl": "pkg:npm/clean-webpack-plugin",
+          "source": "npm_direct"
+        },
+        {
+          "name": "commander",
+          "purl": "pkg:npm/commander",
+          "source": "npm_direct"
+        },
+        {
+          "name": "concat",
+          "purl": "pkg:npm/concat",
+          "source": "npm_direct"
+        },
+        {
+          "name": "core-js",
+          "purl": "pkg:npm/core-js",
+          "source": "npm_direct"
+        },
+        {
+          "name": "coverage-istanbul-loader",
+          "purl": "pkg:npm/coverage-istanbul-loader",
+          "source": "npm_direct"
+        },
+        {
+          "name": "cross-env",
+          "purl": "pkg:npm/cross-env",
+          "source": "npm_direct"
+        },
+        {
+          "name": "css-loader",
+          "purl": "pkg:npm/css-loader",
+          "source": "npm_direct"
+        },
+        {
+          "name": "cssnano",
+          "purl": "pkg:npm/cssnano",
+          "source": "npm_direct"
+        },
+        {
+          "name": "dicomweb-client",
+          "purl": "pkg:npm/dicomweb-client",
+          "source": "npm_direct"
+        },
+        {
+          "name": "docdash",
+          "purl": "pkg:npm/docdash",
+          "source": "npm_direct"
+        },
+        {
+          "name": "dpdm",
+          "purl": "pkg:npm/dpdm",
+          "source": "npm_direct"
+        },
+        {
+          "name": "execa",
+          "purl": "pkg:npm/execa",
+          "source": "npm_direct"
+        },
+        {
+          "name": "exports-loader",
+          "purl": "pkg:npm/exports-loader",
+          "source": "npm_direct"
+        },
+        {
+          "name": "file-loader",
+          "purl": "pkg:npm/file-loader",
+          "source": "npm_direct"
+        },
+        {
+          "name": "follow-redirects",
+          "purl": "pkg:npm/follow-redirects",
+          "source": "npm_direct"
+        },
+        {
+          "name": "fs-extra",
+          "purl": "pkg:npm/fs-extra",
+          "source": "npm_direct"
+        },
+        {
+          "name": "glob",
+          "purl": "pkg:npm/glob",
+          "source": "npm_direct"
+        },
+        {
+          "name": "html-webpack-plugin",
+          "purl": "pkg:npm/html-webpack-plugin",
+          "source": "npm_direct"
+        },
+        {
+          "name": "husky",
+          "purl": "pkg:npm/husky",
+          "source": "npm_direct"
+        },
+        {
+          "name": "jasmine",
+          "purl": "pkg:npm/jasmine",
+          "source": "npm_direct"
+        },
+        {
+          "name": "jest",
+          "purl": "pkg:npm/jest",
+          "source": "npm_direct"
+        },
+        {
+          "name": "jest-canvas-mock",
+          "purl": "pkg:npm/jest-canvas-mock",
+          "source": "npm_direct"
+        },
+        {
+          "name": "jest-environment-jsdom",
+          "purl": "pkg:npm/jest-environment-jsdom",
+          "source": "npm_direct"
+        },
+        {
+          "name": "jest-junit",
+          "purl": "pkg:npm/jest-junit",
+          "source": "npm_direct"
+        },
+        {
+          "name": "karma",
+          "purl": "pkg:npm/karma",
+          "source": "npm_direct"
+        },
+        {
+          "name": "karma-chrome-launcher",
+          "purl": "pkg:npm/karma-chrome-launcher",
+          "source": "npm_direct"
+        },
+        {
+          "name": "karma-coverage",
+          "purl": "pkg:npm/karma-coverage",
+          "source": "npm_direct"
+        },
+        {
+          "name": "karma-jasmine",
+          "purl": "pkg:npm/karma-jasmine",
+          "source": "npm_direct"
+        },
+        {
+          "name": "karma-junit-reporter",
+          "purl": "pkg:npm/karma-junit-reporter",
+          "source": "npm_direct"
+        },
+        {
+          "name": "karma-spec-reporter",
+          "purl": "pkg:npm/karma-spec-reporter",
+          "source": "npm_direct"
+        },
+        {
+          "name": "karma-webpack",
+          "purl": "pkg:npm/karma-webpack",
+          "source": "npm_direct"
+        },
+        {
+          "name": "lint-staged",
+          "purl": "pkg:npm/lint-staged",
+          "source": "npm_direct"
+        },
+        {
+          "name": "nyc",
+          "purl": "pkg:npm/nyc",
+          "source": "npm_direct"
+        },
+        {
+          "name": "open-cli",
+          "purl": "pkg:npm/open-cli",
+          "source": "npm_direct"
+        },
+        {
+          "name": "oxlint",
+          "purl": "pkg:npm/oxlint",
+          "source": "npm_direct"
+        },
+        {
+          "name": "path-browserify",
+          "purl": "pkg:npm/path-browserify",
+          "source": "npm_direct"
+        },
+        {
+          "name": "playwright-test-coverage",
+          "purl": "pkg:npm/playwright-test-coverage",
+          "source": "npm_direct"
+        },
+        {
+          "name": "postcss",
+          "purl": "pkg:npm/postcss",
+          "source": "npm_direct"
+        },
+        {
+          "name": "postcss-import",
+          "purl": "pkg:npm/postcss-import",
+          "source": "npm_direct"
+        },
+        {
+          "name": "postcss-loader",
+          "purl": "pkg:npm/postcss-loader",
+          "source": "npm_direct"
+        },
+        {
+          "name": "postcss-preset-env",
+          "purl": "pkg:npm/postcss-preset-env",
+          "source": "npm_direct"
+        },
+        {
+          "name": "prettier",
+          "purl": "pkg:npm/prettier",
+          "source": "npm_direct"
+        },
+        {
+          "name": "publint",
+          "purl": "pkg:npm/publint",
+          "source": "npm_direct"
+        },
+        {
+          "name": "puppeteer",
+          "purl": "pkg:npm/puppeteer",
+          "source": "npm_direct"
+        },
+        {
+          "name": "resemblejs",
+          "purl": "pkg:npm/resemblejs",
+          "source": "npm_direct"
+        },
+        {
+          "name": "rollup",
+          "purl": "pkg:npm/rollup",
+          "source": "npm_direct"
+        },
+        {
+          "name": "semver",
+          "purl": "pkg:npm/semver",
+          "source": "npm_direct"
+        },
+        {
+          "name": "shader-loader",
+          "purl": "pkg:npm/shader-loader",
+          "source": "npm_direct"
+        },
+        {
+          "name": "shelljs",
+          "purl": "pkg:npm/shelljs",
+          "source": "npm_direct"
+        },
+        {
+          "name": "shx",
+          "purl": "pkg:npm/shx",
+          "source": "npm_direct"
+        },
+        {
+          "name": "sinon",
+          "purl": "pkg:npm/sinon",
+          "source": "npm_direct"
+        },
+        {
+          "name": "source-map-support",
+          "purl": "pkg:npm/source-map-support",
+          "source": "npm_direct"
+        },
+        {
+          "name": "style-loader",
+          "purl": "pkg:npm/style-loader",
+          "source": "npm_direct"
+        },
+        {
+          "name": "stylelint",
+          "purl": "pkg:npm/stylelint",
+          "source": "npm_direct"
+        },
+        {
+          "name": "stylelint-config-recommended",
+          "purl": "pkg:npm/stylelint-config-recommended",
+          "source": "npm_direct"
+        },
+        {
+          "name": "ts-loader",
+          "purl": "pkg:npm/ts-loader",
+          "source": "npm_direct"
+        },
+        {
+          "name": "ts-node",
+          "purl": "pkg:npm/ts-node",
+          "source": "npm_direct"
+        },
+        {
+          "name": "tsc-alias",
+          "purl": "pkg:npm/tsc-alias",
+          "source": "npm_direct"
+        },
+        {
+          "name": "typescript",
+          "purl": "pkg:npm/typescript",
+          "source": "npm_direct"
+        },
+        {
+          "name": "url-loader",
+          "purl": "pkg:npm/url-loader",
+          "source": "npm_direct"
+        },
+        {
+          "name": "vitest",
+          "purl": "pkg:npm/vitest",
+          "source": "npm_direct"
+        },
+        {
+          "name": "webpack",
+          "purl": "pkg:npm/webpack",
+          "source": "npm_direct"
+        },
+        {
+          "name": "webpack-bundle-analyzer",
+          "purl": "pkg:npm/webpack-bundle-analyzer",
+          "source": "npm_direct"
+        },
+        {
+          "name": "webpack-cli",
+          "purl": "pkg:npm/webpack-cli",
+          "source": "npm_direct"
+        },
+        {
+          "name": "webpack-dev-server",
+          "purl": "pkg:npm/webpack-dev-server",
+          "source": "npm_direct"
+        },
+        {
+          "name": "webpack-merge",
+          "purl": "pkg:npm/webpack-merge",
+          "source": "npm_direct"
+        },
+        {
+          "name": "xml2js",
+          "purl": "pkg:npm/xml2js",
+          "source": "npm_direct"
+        }
+      ],
+      "detail": {
+        "bom_format": "CycloneDX",
+        "component_count": 112,
+        "format": "CycloneDX-1.5-lite",
+        "spec_version": "1.5",
+        "tool": "anticloud-bench/1.0"
+      },
+      "pass": true,
+      "threshold": "component_count > 0",
+      "value": 112
+    },
+    "05_git_health": {
+      "check": "Git provenance health",
+      "detail": {
+        "commit_count_shallow": "1",
+        "dirty_files": 1,
+        "distinct_authors_recent": 1,
+        "head_date": "2026-09-30 19:03:23 +0000",
+        "head_sha": "9221dd884473069308a754adb2acb5a2fc4fe46a",
+        "is_git_repo": true,
+        "last_author": "ohif-bot",
+        "remote_origin": "https://github.com/cornerstonejs/cornerstone3D"
+      },
+      "pass": true,
+      "threshold": "is_git_repo and head_sha present",
+      "value": "9221dd884473069308a754adb2acb5a2fc4fe46a"
+    },
+    "06_owasp_llm_top10": {
+      "check": "OWASP LLM Top 10",
+      "controls_met": 3,
+      "controls_total": 4,
+      "evidence": [
+        "LLM03 supply chain: no torch/transformers/pytorch dependency pulled in",
+        "LLM06/LLM08: dependency manifests are explicit and hashable",
+        "LLM01: prompt-injection surface not applicable - no LLM runtime in product path"
+      ],
+      "framework": "OWASP Top 10 for LLM Apps (2025)",
+      "gaps": [
+        "LLM09: overreliance - no model-evidence/eval harness in scope (no LLM product)"
+      ],
+      "note": "AI/LLM-latency checks explicitly EXCLUDED per policy; assessed only as supply-chain posture.",
+      "pass": true,
+      "score": 75.0,
+      "threshold": "score >= 70"
+    },
+    "07_owasp_top10": {
+      "check": "OWASP Top 10",
+      "controls_met": 4,
+      "controls_total": 5,
+      "evidence": [
+        "A07:2021 no hardcoded credentials found in scanned sources",
+        "A02:2021 no weak MD5 usage detected in first-party code",
+        "A02:2021 no TLS verification disabled (verify=False)",
+        "A06:2021 static-analysis config present and enforced in gate"
+      ],
+      "framework": "OWASP Top 10 (2021)",
+      "gaps": [
+        "A03:2021 60 injection sink pattern(s)"
+      ],
+      "pass": true,
+      "score": 80.0,
+      "threshold": "score >= 70"
+    },
+    "08_soc1": {
+      "check": "SOC 1",
+      "controls_met": 4,
+      "controls_total": 4,
+      "evidence": [
+        "CC7.2/CC8.1: change management evidenced by CI workflow automation",
+        "CC6.1 logical access: no hardcoded secrets in source",
+        "CC7.3/CC7.4: versioned change history with 1 recent author(s)",
+        "CC7.2: automated static-analysis gate on every change"
+      ],
+      "framework": "AICPA SOC 1 (2017 revised)",
+      "gaps": [],
+      "pass": true,
+      "score": 100.0,
+      "threshold": "score >= 70"
+    },
+    "09_soc2_type2": {
+      "check": "SOC 2 Type II",
+      "controls_met": 7,
+      "controls_total": 7,
+      "evidence": [
+        "CC7.2/CC8.1: change management evidenced by CI workflow automation",
+        "CC6.1 logical access: no hardcoded secrets in source",
+        "CC7.3/CC7.4: versioned change history with 1 recent author(s)",
+        "CC7.2: automated static-analysis gate on every change",
+        "CC7.1/CC7.2: vulnerability-management documentation present",
+        "CC7.1: SBOM generated, satisfying licence/provenance tracking",
+        "CC8.1: changelog documents change over time"
+      ],
+      "framework": "AICPA SOC 2 Type II (2017 revised, TSC)",
+      "gaps": [],
+      "note": "Type II additionally requires an observation period; scored on control design + evidence present in the repository.",
+      "pass": true,
+      "score": 100.0,
+      "threshold": "score >= 70"
+    },
+    "10_nist_ai_rmf": {
+      "check": "NIST AI RMF",
+      "controls_met": 4,
+      "controls_total": 5,
+      "evidence": [
+        "GOVERN 1.1: deterministic, reproducible benchmark run recorded as JSON evidence",
+        "MAP 2.3: benchmark gate is automatable in CI",
+        "MEASURE 2.5: no unapproved ML model runtime in graph (measurable scope)",
+        "MANAGE 2.2: no unmanaged credential artefacts in source"
+      ],
+      "framework": "NIST AI RMF 1.0 (Playbook)",
+      "gaps": [
+        "MANAGE 4.1: no AI system in scope - AI RMF risk register is N/A"
+      ],
+      "pass": true,
+      "score": 80.0,
+      "threshold": "score >= 70"
+    },
+    "11_nist_sp800_53": {
+      "check": "NIST SP 800-53 Rev.5",
+      "controls_met": 7,
+      "controls_total": 7,
+      "evidence": [
+        "CM-3/CM-5: configuration change control via CI",
+        "SA-11: static code analysis performed in the build gate",
+        "IA-5: no authenticator material committed",
+        "AU-3/AU-10: change provenance recorded (1 recent authors)",
+        "SC-13: SHA-256 cryptographically protected artefacts",
+        "SI-7: integrity verifiable by pinned commit 9221dd884473",
+        "SI-7/CM-10: dependency lock artefacts are hash-pinned"
+      ],
+      "framework": "NIST SP 800-53 Rev.5 (moderate baseline)",
+      "gaps": [],
+      "pass": true,
+      "score": 100.0,
+      "threshold": "score >= 70"
+    },
+    "12_nist_csf": {
+      "check": "NIST CSF 2.0",
+      "controls_met": 5,
+      "controls_total": 5,
+      "evidence": [
+        "ID.AM-1: software inventory produced (SBOM + LOC census)",
+        "PR.PS-1: CI pipeline enforces a repeatable build/analysis process",
+        "PR.AA-1: no embedded credentials in delivered artefacts",
+        "DE.CM-1: change monitoring via version control history",
+        "RS.AN-1: vulnerability-response artefacts present"
+      ],
+      "framework": "NIST CSF 2.0 (functions)",
+      "gaps": [],
+      "pass": true,
+      "score": 100.0,
+      "threshold": "score >= 70"
+    },
+    "13_fedramp": {
+      "check": "FedRAMP Rev.5",
+      "controls_met": 4,
+      "controls_total": 5,
+      "evidence": [
+        "SA-10: developer configuration/change control in CI",
+        "SA-11: static analysis configured in the release gate",
+        "SA-4/CM-8: SBOM generated for the assessed artefact",
+        "AU-6: audit records present (1 recent authors)"
+      ],
+      "framework": "FedRAMP Rev.5 (20x20 moderate)",
+      "gaps": [
+        "SA-25: 0 secret / 60 sink finding(s)"
+      ],
+      "note": "FedRAMP requires an agency ATO; this is a readiness gap assessment against the moderate baseline, not an authorization.",
+      "pass": true,
+      "score": 80.0,
+      "threshold": "score >= 70"
+    },
+    "14_pci_dss": {
+      "check": "PCI DSS v4.0.1",
+      "controls_met": 5,
+      "controls_total": 5,
+      "evidence": [
+        "Req 3/8: no hardcoded credentials/keys in source",
+        "Req 3.5: no weak MD5 use detected for key derivation",
+        "Req 6.4.3: software inventory (SBOM) maintained for change detection",
+        "Req 6.4.1/6.4.2: automated change + code review gate",
+        "Req 6.3.2: vulnerability scanning configured in the build"
+      ],
+      "framework": "PCI DSS v4.0.1",
+      "gaps": [],
+      "note": "Applicability depends on whether the artefact handles cardholder data.",
+      "pass": true,
+      "score": 100.0,
+      "threshold": "score >= 70"
+    },
+    "15_iso_27001": {
+      "check": "ISO/IEC 27001:2022",
+      "controls_met": 5,
+      "controls_total": 5,
+      "evidence": [
+        "A.5.17/A.8.4: authentication information not hardcoded",
+        "A.8.32: change management procedure automated via CI",
+        "A.8.8/A.8.19: hash-pinned dependency lock for supply-chain integrity",
+        "A.8.15/A.8.32: change logging via version control",
+        "A.8.32/IP: permissive licence permits governed redistribution"
+      ],
+      "framework": "ISO/IEC 27001:2022 Annex A",
+      "gaps": [],
+      "pass": true,
+      "score": 100.0,
+      "threshold": "score >= 70"
+    },
+    "16_mitre_attack": {
+      "check": "MITRE ATT&CK",
+      "controls_met": 7,
+      "controls_total": 7,
+      "evidence": [
+        "T1552.001 Credentials In Files: mitigated, no secrets in source",
+        "T1059 Command and Scripting Interpreter: no eval() sink in first-party code",
+        "T1059.004 Unix Shell: no shell=True construction",
+        "T1557 Adversary-in-the-Middle: no disabled TLS verification",
+        "T1195 Supply Chain Compromise: commit 9221dd884473 pinned for provenance",
+        "T1195.002 Compromise Software Supply Chain: CI gate detects drift",
+        "T1059.004: no remote-script pipe-to-shell bootstrap"
+      ],
+      "framework": "MITRE ATT&CK v17 (software supply chain + host techniques)",
+      "gaps": [],
+      "pass": true,
+      "score": 100.0,
+      "threshold": "score >= 70"
+    },
+    "17_ml_trl": {
+      "check": "ML-TRL",
+      "controls_met": 4,
+      "controls_total": 5,
+      "evidence": [
+        "TRL-9 reproducibility: no unmeasured ML runtime in the graph",
+        "TRL-6/7: repeatable automated execution of the verification gate",
+        "TRL-2 documented changes across versions",
+        "TRL-8/9: benchmark harness emits machine-readable JSON, no AI/LLM-latency measurement in scope (excluded by policy)"
+      ],
+      "framework": "NIST AI RMF / ML-TRL (technology readiness levels)",
+      "gaps": [
+        "TRL-4: no version enumeration"
+      ],
+      "note": "ML-TRL dimensions assessed for software-integrity applicability; model-training TRL dimensions are N/A (no ML training in scope).",
+      "pass": true,
+      "score": 80.0,
+      "threshold": "score >= 70"
+    },
+    "18_ci_static_gate": {
+      "check": "CI + static-analysis gate",
+      "detail": {
+        "ci_present": true,
+        "ci_workflows": [
+          "build-docs.yml",
+          "codeql.yml",
+          "docusaurus-build.yml",
+          "format-check.yml",
+          "ohif-downstream.yml",
+          "playwright.yml",
+          "publish-codemod-registry.yml",
+          "publish.yml",
+          "test.yml",
+          "validate-codemod-registry.yml",
+          "validate-packaging.yml"
+        ],
+        "pass": true,
+        "static_analysis_configs": [
+          "tsconfig.json"
+        ],
+        "static_gate_present": true
+      },
+      "pass": true,
+      "threshold": "CI and static gate both present",
+      "value": true
+    }
+  },
+  "duration_seconds": 224.392,
+  "excluded_by_policy": [
+    "all AI/LLM-latency benchmarks",
+    "pytorch",
+    "torch",
+    "transformers"
+  ],
+  "failed_checks": [],
+  "generated_utc": "2026-10-05T14:25:58.973019+00:00",
+  "git": {
+    "commit_count_shallow": "1",
+    "dirty_files": 1,
+    "distinct_authors_recent": 1,
+    "head_date": "2026-09-30 19:03:23 +0000",
+    "head_sha": "9221dd884473069308a754adb2acb5a2fc4fe46a",
+    "is_git_repo": true,
+    "last_author": "ohif-bot",
+    "remote_origin": "https://github.com/cornerstonejs/cornerstone3D"
+  },
+  "harness": "anticloud-bench/1.0",
+  "licence": {
+    "first_line": "MIT License",
+    "licence_class": "A",
+    "licence_file": "LICENSE",
+    "licence_sha256": "a3c95915d211a6f2b99970d47ca89c54d513605e9629a8957229a28f0bc5a111",
+    "rationale": "MIT detected -> class A (may vendor+relicense w/ attribution)",
+    "redistribution": "may vendor, modify, relicense and append Anticommons, push as ours WITH attribution"
+  },
+  "path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\MEDICAL_HEALTH\\CORNERSTONE3D\\UPSTREAM_CLONE",
+  "repo": "CORNERSTONE3D",
+  "schema": "anticloud.tier.bench/1.0",
+  "source_census": {
+    "blank_lines": 53852,
+    "code_files": 2454,
+    "comment_lines": 56119,
+    "effective_loc": 314284,
+    "total_lines": 424255
+  },
+  "summary": {
+    "all_pass": true,
+    "checks_failed": 0,
+    "checks_passed": 18,
+    "checks_total": 18,
+    "licence_class": "A",
+    "pass_rate": 100.0
+  },
+  "versioning": {}
+}

@@ -1,0 +1,31 @@
+ Command Line Interface — CORNERSTONE3D
+
+Upstream: https://github.com/cornerstonejs/cornerstone3D
+
+ Anticloud CLI
+
+bash
+ Install
+pip install anticloud-cornerstone3d
+
+ Run offline with PAX inference
+anticloud-cornerstone3d --offline --pax-local
+
+ Run with AIOSS logging
+anticloud-cornerstone3d --aioss-log ./ledger.jsonl
+
+ Single binary (after build)
+./cornerstone3d --config config.yaml
+
+
+ Options
+
+| Flag | Description |
+| --- | --- |
+| --offline | Disable all network calls |
+| --pax-local | Use local PAX inference at 127.0.0.1:11434 |
+| --aioss-log PATH | Write AIOSS audit chain to PATH |
+| --encrypt | Enable AES-256 at rest for output files |
+| --gpu | Force GPU inference |
+| --cpu | Force CPU inference |
+| --config PATH | Load configuration from YAML file |
