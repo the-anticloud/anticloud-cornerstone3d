@@ -1,0 +1,1075 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:f0bcb6b5-a9a8-5f47-a24e-66fd3b2f3282",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-05T16:04:05Z",
+    "component": {
+      "type": "application",
+      "name": "CORNERSTONE3D",
+      "version": "9221dd884473",
+      "bom-ref": "pkg:generic/anticloud/CORNERSTONE3D@9221dd884473",
+      "purl": "pkg:generic/anticloud/CORNERSTONE3D@9221dd884473",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "anticloud:source-commit",
+        "value": "9221dd884473069308a754adb2acb5a2fc4fe46a"
+      },
+      {
+        "name": "anticloud:source-url",
+        "value": "https://github.com/cornerstonejs/cornerstone3D"
+      },
+      {
+        "name": "anticloud:tier",
+        "value": "tier-agent"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "@arethetypeswrong/cli",
+      "version": "0.18.4",
+      "purl": "pkg:npm/@arethetypeswrong/cli@0.18.4",
+      "bom-ref": "npm/@arethetypeswrong/cli@0.18.4"
+    },
+    {
+      "type": "library",
+      "name": "@babel/core",
+      "version": "7.26.10",
+      "purl": "pkg:npm/@babel/core@7.26.10",
+      "bom-ref": "npm/@babel/core@7.26.10"
+    },
+    {
+      "type": "library",
+      "name": "@babel/plugin-external-helpers",
+      "version": "7.25.9",
+      "purl": "pkg:npm/@babel/plugin-external-helpers@7.25.9",
+      "bom-ref": "npm/@babel/plugin-external-helpers@7.25.9"
+    },
+    {
+      "type": "library",
+      "name": "@babel/plugin-proposal-class-properties",
+      "version": "7.18.6",
+      "purl": "pkg:npm/@babel/plugin-proposal-class-properties@7.18.6",
+      "bom-ref": "npm/@babel/plugin-proposal-class-properties@7.18.6"
+    },
+    {
+      "type": "library",
+      "name": "@babel/plugin-proposal-object-rest-spread",
+      "version": "7.20.7",
+      "purl": "pkg:npm/@babel/plugin-proposal-object-rest-spread@7.20.7",
+      "bom-ref": "npm/@babel/plugin-proposal-object-rest-spread@7.20.7"
+    },
+    {
+      "type": "library",
+      "name": "@babel/plugin-transform-class-static-block",
+      "version": "7.26.0",
+      "purl": "pkg:npm/@babel/plugin-transform-class-static-block@7.26.0",
+      "bom-ref": "npm/@babel/plugin-transform-class-static-block@7.26.0"
+    },
+    {
+      "type": "library",
+      "name": "@babel/plugin-transform-private-methods",
+      "version": "7.28.6",
+      "purl": "pkg:npm/@babel/plugin-transform-private-methods@7.28.6",
+      "bom-ref": "npm/@babel/plugin-transform-private-methods@7.28.6"
+    },
+    {
+      "type": "library",
+      "name": "@babel/plugin-transform-runtime",
+      "version": "7.26.10",
+      "purl": "pkg:npm/@babel/plugin-transform-runtime@7.26.10",
+      "bom-ref": "npm/@babel/plugin-transform-runtime@7.26.10"
+    },
+    {
+      "type": "library",
+      "name": "@babel/plugin-transform-typescript",
+      "version": "7.28.6",
+      "purl": "pkg:npm/@babel/plugin-transform-typescript@7.28.6",
+      "bom-ref": "npm/@babel/plugin-transform-typescript@7.28.6"
+    },
+    {
+      "type": "library",
+      "name": "@babel/preset-env",
+      "version": "7.29.5",
+      "purl": "pkg:npm/@babel/preset-env@7.29.5",
+      "bom-ref": "npm/@babel/preset-env@7.29.5"
+    },
+    {
+      "type": "library",
+      "name": "@babel/preset-react",
+      "version": "7.26.3",
+      "purl": "pkg:npm/@babel/preset-react@7.26.3",
+      "bom-ref": "npm/@babel/preset-react@7.26.3"
+    },
+    {
+      "type": "library",
+      "name": "@babel/preset-typescript",
+      "version": "7.26.0",
+      "purl": "pkg:npm/@babel/preset-typescript@7.26.0",
+      "bom-ref": "npm/@babel/preset-typescript@7.26.0"
+    },
+    {
+      "type": "library",
+      "name": "@babel/runtime",
+      "version": "7.26.10",
+      "purl": "pkg:npm/@babel/runtime@7.26.10",
+      "bom-ref": "npm/@babel/runtime@7.26.10"
+    },
+    {
+      "type": "library",
+      "name": "@babel/runtime-corejs3",
+      "version": "7.26.10",
+      "purl": "pkg:npm/@babel/runtime-corejs3@7.26.10",
+      "bom-ref": "npm/@babel/runtime-corejs3@7.26.10"
+    },
+    {
+      "type": "library",
+      "name": "@cornerstonejs/calculate-suv",
+      "version": "1.0.3",
+      "purl": "pkg:npm/@cornerstonejs/calculate-suv@1.0.3",
+      "bom-ref": "npm/@cornerstonejs/calculate-suv@1.0.3"
+    },
+    {
+      "type": "library",
+      "name": "@istanbuljs/nyc-config-typescript",
+      "version": "1.0.2",
+      "purl": "pkg:npm/@istanbuljs/nyc-config-typescript@1.0.2",
+      "bom-ref": "npm/@istanbuljs/nyc-config-typescript@1.0.2"
+    },
+    {
+      "type": "library",
+      "name": "@microsoft/api-extractor",
+      "version": "7.57.1",
+      "purl": "pkg:npm/@microsoft/api-extractor@7.57.1",
+      "bom-ref": "npm/@microsoft/api-extractor@7.57.1"
+    },
+    {
+      "type": "library",
+      "name": "@microsoft/tsdoc",
+      "version": "0.15.1",
+      "purl": "pkg:npm/@microsoft/tsdoc@0.15.1",
+      "bom-ref": "npm/@microsoft/tsdoc@0.15.1"
+    },
+    {
+      "type": "library",
+      "name": "@playwright/test",
+      "version": "1.59.1",
+      "purl": "pkg:npm/@playwright/test@1.59.1",
+      "bom-ref": "npm/@playwright/test@1.59.1"
+    },
+    {
+      "type": "library",
+      "name": "@prettier/plugin-oxc",
+      "version": "0.0.4",
+      "purl": "pkg:npm/@prettier/plugin-oxc@0.0.4",
+      "bom-ref": "npm/@prettier/plugin-oxc@0.0.4"
+    },
+    {
+      "type": "library",
+      "name": "@rollup/plugin-babel",
+      "version": "6.0.4",
+      "purl": "pkg:npm/@rollup/plugin-babel@6.0.4",
+      "bom-ref": "npm/@rollup/plugin-babel@6.0.4"
+    },
+    {
+      "type": "library",
+      "name": "@rollup/plugin-json",
+      "version": "6.1.0",
+      "purl": "pkg:npm/@rollup/plugin-json@6.1.0",
+      "bom-ref": "npm/@rollup/plugin-json@6.1.0"
+    },
+    {
+      "type": "library",
+      "name": "@rollup/plugin-node-resolve",
+      "version": "15.3.1",
+      "purl": "pkg:npm/@rollup/plugin-node-resolve@15.3.1",
+      "bom-ref": "npm/@rollup/plugin-node-resolve@15.3.1"
+    },
+    {
+      "type": "library",
+      "name": "@rollup/plugin-typescript",
+      "version": "11.1.6",
+      "purl": "pkg:npm/@rollup/plugin-typescript@11.1.6",
+      "bom-ref": "npm/@rollup/plugin-typescript@11.1.6"
+    },
+    {
+      "type": "library",
+      "name": "@rspack/cli",
+      "version": "1.6.0",
+      "purl": "pkg:npm/@rspack/cli@1.6.0",
+      "bom-ref": "npm/@rspack/cli@1.6.0"
+    },
+    {
+      "type": "library",
+      "name": "@rspack/core",
+      "version": "1.6.0",
+      "purl": "pkg:npm/@rspack/core@1.6.0",
+      "bom-ref": "npm/@rspack/core@1.6.0"
+    },
+    {
+      "type": "library",
+      "name": "@types/dom-webcodecs",
+      "version": "0.1.14",
+      "purl": "pkg:npm/@types/dom-webcodecs@0.1.14",
+      "bom-ref": "npm/@types/dom-webcodecs@0.1.14"
+    },
+    {
+      "type": "library",
+      "name": "@types/emscripten",
+      "version": "1.40.0",
+      "purl": "pkg:npm/@types/emscripten@1.40.0",
+      "bom-ref": "npm/@types/emscripten@1.40.0"
+    },
+    {
+      "type": "library",
+      "name": "@types/jasmine",
+      "version": "4.6.5",
+      "purl": "pkg:npm/@types/jasmine@4.6.5",
+      "bom-ref": "npm/@types/jasmine@4.6.5"
+    },
+    {
+      "type": "library",
+      "name": "@types/jest",
+      "version": "29.5.14",
+      "purl": "pkg:npm/@types/jest@29.5.14",
+      "bom-ref": "npm/@types/jest@29.5.14"
+    },
+    {
+      "type": "library",
+      "name": "@types/karma",
+      "version": "6.3.9",
+      "purl": "pkg:npm/@types/karma@6.3.9",
+      "bom-ref": "npm/@types/karma@6.3.9"
+    },
+    {
+      "type": "library",
+      "name": "@types/node",
+      "version": "20.17.24",
+      "purl": "pkg:npm/@types/node@20.17.24",
+      "bom-ref": "npm/@types/node@20.17.24"
+    },
+    {
+      "type": "library",
+      "name": "@types/react",
+      "version": "17.0.83",
+      "purl": "pkg:npm/@types/react@17.0.83",
+      "bom-ref": "npm/@types/react@17.0.83"
+    },
+    {
+      "type": "library",
+      "name": "@types/react-dom",
+      "version": "17.0.26",
+      "purl": "pkg:npm/@types/react-dom@17.0.26",
+      "bom-ref": "npm/@types/react-dom@17.0.26"
+    },
+    {
+      "type": "library",
+      "name": "@vitest/browser-playwright",
+      "version": "4.1.10",
+      "purl": "pkg:npm/@vitest/browser-playwright@4.1.10",
+      "bom-ref": "npm/@vitest/browser-playwright@4.1.10"
+    },
+    {
+      "type": "library",
+      "name": "@webgpu/types",
+      "version": "0.1.56",
+      "purl": "pkg:npm/@webgpu/types@0.1.56",
+      "bom-ref": "npm/@webgpu/types@0.1.56"
+    },
+    {
+      "type": "library",
+      "name": "acorn",
+      "version": "8.14.1",
+      "purl": "pkg:npm/acorn@8.14.1",
+      "bom-ref": "npm/acorn@8.14.1"
+    },
+    {
+      "type": "library",
+      "name": "acorn-jsx",
+      "version": "5.3.2",
+      "purl": "pkg:npm/acorn-jsx@5.3.2",
+      "bom-ref": "npm/acorn-jsx@5.3.2"
+    },
+    {
+      "type": "library",
+      "name": "ajv",
+      "version": "8.20.0",
+      "purl": "pkg:npm/ajv@8.20.0",
+      "bom-ref": "npm/ajv@8.20.0"
+    },
+    {
+      "type": "library",
+      "name": "autoprefixer",
+      "version": "10.4.21",
+      "purl": "pkg:npm/autoprefixer@10.4.21",
+      "bom-ref": "npm/autoprefixer@10.4.21"
+    },
+    {
+      "type": "library",
+      "name": "babel-loader",
+      "version": "9.1.2",
+      "purl": "pkg:npm/babel-loader@9.1.2",
+      "bom-ref": "npm/babel-loader@9.1.2"
+    },
+    {
+      "type": "library",
+      "name": "babel-plugin-istanbul",
+      "version": "7.0.1",
+      "purl": "pkg:npm/babel-plugin-istanbul@7.0.1",
+      "bom-ref": "npm/babel-plugin-istanbul@7.0.1"
+    },
+    {
+      "type": "library",
+      "name": "babel-plugin-transform-import-meta",
+      "version": "2.3.2",
+      "purl": "pkg:npm/babel-plugin-transform-import-meta@2.3.2",
+      "bom-ref": "npm/babel-plugin-transform-import-meta@2.3.2"
+    },
+    {
+      "type": "library",
+      "name": "chai",
+      "version": "5.2.0",
+      "purl": "pkg:npm/chai@5.2.0",
+      "bom-ref": "npm/chai@5.2.0"
+    },
+    {
+      "type": "library",
+      "name": "clean-webpack-plugin",
+      "version": "4.0.0",
+      "purl": "pkg:npm/clean-webpack-plugin@4.0.0",
+      "bom-ref": "npm/clean-webpack-plugin@4.0.0"
+    },
+    {
+      "type": "library",
+      "name": "commander",
+      "version": "10.0.1",
+      "purl": "pkg:npm/commander@10.0.1",
+      "bom-ref": "npm/commander@10.0.1"
+    },
+    {
+      "type": "library",
+      "name": "concat",
+      "version": "1.0.3",
+      "purl": "pkg:npm/concat@1.0.3",
+      "bom-ref": "npm/concat@1.0.3"
+    },
+    {
+      "type": "library",
+      "name": "core-js",
+      "version": "3.41.0",
+      "purl": "pkg:npm/core-js@3.41.0",
+      "bom-ref": "npm/core-js@3.41.0"
+    },
+    {
+      "type": "library",
+      "name": "coverage-istanbul-loader",
+      "version": "3.0.5",
+      "purl": "pkg:npm/coverage-istanbul-loader@3.0.5",
+      "bom-ref": "npm/coverage-istanbul-loader@3.0.5"
+    },
+    {
+      "type": "library",
+      "name": "cross-env",
+      "version": "7.0.3",
+      "purl": "pkg:npm/cross-env@7.0.3",
+      "bom-ref": "npm/cross-env@7.0.3"
+    },
+    {
+      "type": "library",
+      "name": "css-loader",
+      "version": "6.11.0",
+      "purl": "pkg:npm/css-loader@6.11.0",
+      "bom-ref": "npm/css-loader@6.11.0"
+    },
+    {
+      "type": "library",
+      "name": "cssnano",
+      "version": "6.1.2",
+      "purl": "pkg:npm/cssnano@6.1.2",
+      "bom-ref": "npm/cssnano@6.1.2"
+    },
+    {
+      "type": "library",
+      "name": "dicomweb-client",
+      "version": "0.11.2",
+      "purl": "pkg:npm/dicomweb-client@0.11.2",
+      "bom-ref": "npm/dicomweb-client@0.11.2"
+    },
+    {
+      "type": "library",
+      "name": "docdash",
+      "version": "1.2.0",
+      "purl": "pkg:npm/docdash@1.2.0",
+      "bom-ref": "npm/docdash@1.2.0"
+    },
+    {
+      "type": "library",
+      "name": "dpdm",
+      "version": "4.0.1",
+      "purl": "pkg:npm/dpdm@4.0.1",
+      "bom-ref": "npm/dpdm@4.0.1"
+    },
+    {
+      "type": "library",
+      "name": "execa",
+      "version": "7.2.0",
+      "purl": "pkg:npm/execa@7.2.0",
+      "bom-ref": "npm/execa@7.2.0"
+    },
+    {
+      "type": "library",
+      "name": "exports-loader",
+      "version": "3.1.0",
+      "purl": "pkg:npm/exports-loader@3.1.0",
+      "bom-ref": "npm/exports-loader@3.1.0"
+    },
+    {
+      "type": "library",
+      "name": "file-loader",
+      "version": "6.2.0",
+      "purl": "pkg:npm/file-loader@6.2.0",
+      "bom-ref": "npm/file-loader@6.2.0"
+    },
+    {
+      "type": "library",
+      "name": "follow-redirects",
+      "version": "1.15.9",
+      "purl": "pkg:npm/follow-redirects@1.15.9",
+      "bom-ref": "npm/follow-redirects@1.15.9"
+    },
+    {
+      "type": "library",
+      "name": "fs-extra",
+      "version": "10.1.0",
+      "purl": "pkg:npm/fs-extra@10.1.0",
+      "bom-ref": "npm/fs-extra@10.1.0"
+    },
+    {
+      "type": "library",
+      "name": "glob",
+      "version": "10.5.0",
+      "purl": "pkg:npm/glob@10.5.0",
+      "bom-ref": "npm/glob@10.5.0"
+    },
+    {
+      "type": "library",
+      "name": "html-webpack-plugin",
+      "version": "5.6.3",
+      "purl": "pkg:npm/html-webpack-plugin@5.6.3",
+      "bom-ref": "npm/html-webpack-plugin@5.6.3"
+    },
+    {
+      "type": "library",
+      "name": "husky",
+      "version": "9.1.7",
+      "purl": "pkg:npm/husky@9.1.7",
+      "bom-ref": "npm/husky@9.1.7"
+    },
+    {
+      "type": "library",
+      "name": "jasmine",
+      "version": "6.0.0",
+      "purl": "pkg:npm/jasmine@6.0.0",
+      "bom-ref": "npm/jasmine@6.0.0"
+    },
+    {
+      "type": "library",
+      "name": "jest",
+      "version": "30.2.0",
+      "purl": "pkg:npm/jest@30.2.0",
+      "bom-ref": "npm/jest@30.2.0"
+    },
+    {
+      "type": "library",
+      "name": "jest-canvas-mock",
+      "version": "2.5.2",
+      "purl": "pkg:npm/jest-canvas-mock@2.5.2",
+      "bom-ref": "npm/jest-canvas-mock@2.5.2"
+    },
+    {
+      "type": "library",
+      "name": "jest-environment-jsdom",
+      "version": "30.2.0",
+      "purl": "pkg:npm/jest-environment-jsdom@30.2.0",
+      "bom-ref": "npm/jest-environment-jsdom@30.2.0"
+    },
+    {
+      "type": "library",
+      "name": "jest-junit",
+      "version": "16.0.0",
+      "purl": "pkg:npm/jest-junit@16.0.0",
+      "bom-ref": "npm/jest-junit@16.0.0"
+    },
+    {
+      "type": "library",
+      "name": "karma",
+      "version": "6.4.4",
+      "purl": "pkg:npm/karma@6.4.4",
+      "bom-ref": "npm/karma@6.4.4"
+    },
+    {
+      "type": "library",
+      "name": "karma-chrome-launcher",
+      "version": "3.2.0",
+      "purl": "pkg:npm/karma-chrome-launcher@3.2.0",
+      "bom-ref": "npm/karma-chrome-launcher@3.2.0"
+    },
+    {
+      "type": "library",
+      "name": "karma-coverage",
+      "version": "2.2.1",
+      "purl": "pkg:npm/karma-coverage@2.2.1",
+      "bom-ref": "npm/karma-coverage@2.2.1"
+    },
+    {
+      "type": "library",
+      "name": "karma-jasmine",
+      "version": "5.1.0",
+      "purl": "pkg:npm/karma-jasmine@5.1.0",
+      "bom-ref": "npm/karma-jasmine@5.1.0"
+    },
+    {
+      "type": "library",
+      "name": "karma-junit-reporter",
+      "version": "2.0.1",
+      "purl": "pkg:npm/karma-junit-reporter@2.0.1",
+      "bom-ref": "npm/karma-junit-reporter@2.0.1"
+    },
+    {
+      "type": "library",
+      "name": "karma-spec-reporter",
+      "version": "0.0.36",
+      "purl": "pkg:npm/karma-spec-reporter@0.0.36",
+      "bom-ref": "npm/karma-spec-reporter@0.0.36"
+    },
+    {
+      "type": "library",
+      "name": "karma-webpack",
+      "version": "5.0.1",
+      "purl": "pkg:npm/karma-webpack@5.0.1",
+      "bom-ref": "npm/karma-webpack@5.0.1"
+    },
+    {
+      "type": "library",
+      "name": "lint-staged",
+      "version": "13.3.0",
+      "purl": "pkg:npm/lint-staged@13.3.0",
+      "bom-ref": "npm/lint-staged@13.3.0"
+    },
+    {
+      "type": "library",
+      "name": "nyc",
+      "version": "17.1.0",
+      "purl": "pkg:npm/nyc@17.1.0",
+      "bom-ref": "npm/nyc@17.1.0"
+    },
+    {
+      "type": "library",
+      "name": "open-cli",
+      "version": "7.2.0",
+      "purl": "pkg:npm/open-cli@7.2.0",
+      "bom-ref": "npm/open-cli@7.2.0"
+    },
+    {
+      "type": "library",
+      "name": "oxlint",
+      "version": "1.9.0",
+      "purl": "pkg:npm/oxlint@1.9.0",
+      "bom-ref": "npm/oxlint@1.9.0"
+    },
+    {
+      "type": "library",
+      "name": "path-browserify",
+      "version": "1.0.1",
+      "purl": "pkg:npm/path-browserify@1.0.1",
+      "bom-ref": "npm/path-browserify@1.0.1"
+    },
+    {
+      "type": "library",
+      "name": "playwright-test-coverage",
+      "version": "1.2.12",
+      "purl": "pkg:npm/playwright-test-coverage@1.2.12",
+      "bom-ref": "npm/playwright-test-coverage@1.2.12"
+    },
+    {
+      "type": "library",
+      "name": "postcss",
+      "version": "8.5.26",
+      "purl": "pkg:npm/postcss@8.5.26",
+      "bom-ref": "npm/postcss@8.5.26"
+    },
+    {
+      "type": "library",
+      "name": "postcss-import",
+      "version": "15.1.0",
+      "purl": "pkg:npm/postcss-import@15.1.0",
+      "bom-ref": "npm/postcss-import@15.1.0"
+    },
+    {
+      "type": "library",
+      "name": "postcss-loader",
+      "version": "7.3.4",
+      "purl": "pkg:npm/postcss-loader@7.3.4",
+      "bom-ref": "npm/postcss-loader@7.3.4"
+    },
+    {
+      "type": "library",
+      "name": "postcss-preset-env",
+      "version": "8.5.1",
+      "purl": "pkg:npm/postcss-preset-env@8.5.1",
+      "bom-ref": "npm/postcss-preset-env@8.5.1"
+    },
+    {
+      "type": "library",
+      "name": "prettier",
+      "version": "3.6.2",
+      "purl": "pkg:npm/prettier@3.6.2",
+      "bom-ref": "npm/prettier@3.6.2"
+    },
+    {
+      "type": "library",
+      "name": "publint",
+      "version": "0.3.21",
+      "purl": "pkg:npm/publint@0.3.21",
+      "bom-ref": "npm/publint@0.3.21"
+    },
+    {
+      "type": "library",
+      "name": "puppeteer",
+      "version": "13.7.0",
+      "purl": "pkg:npm/puppeteer@13.7.0",
+      "bom-ref": "npm/puppeteer@13.7.0"
+    },
+    {
+      "type": "library",
+      "name": "resemblejs",
+      "version": "5.0.0",
+      "purl": "pkg:npm/resemblejs@5.0.0",
+      "bom-ref": "npm/resemblejs@5.0.0"
+    },
+    {
+      "type": "library",
+      "name": "rollup",
+      "version": "3.30.0",
+      "purl": "pkg:npm/rollup@3.30.0",
+      "bom-ref": "npm/rollup@3.30.0"
+    },
+    {
+      "type": "library",
+      "name": "semver",
+      "version": "7.7.1",
+      "purl": "pkg:npm/semver@7.7.1",
+      "bom-ref": "npm/semver@7.7.1"
+    },
+    {
+      "type": "library",
+      "name": "shader-loader",
+      "version": "1.3.1",
+      "purl": "pkg:npm/shader-loader@1.3.1",
+      "bom-ref": "npm/shader-loader@1.3.1"
+    },
+    {
+      "type": "library",
+      "name": "shelljs",
+      "version": "0.10.0",
+      "purl": "pkg:npm/shelljs@0.10.0",
+      "bom-ref": "npm/shelljs@0.10.0"
+    },
+    {
+      "type": "library",
+      "name": "shx",
+      "version": "0.4.0",
+      "purl": "pkg:npm/shx@0.4.0",
+      "bom-ref": "npm/shx@0.4.0"
+    },
+    {
+      "type": "library",
+      "name": "sinon",
+      "version": "21.0.0",
+      "purl": "pkg:npm/sinon@21.0.0",
+      "bom-ref": "npm/sinon@21.0.0"
+    },
+    {
+      "type": "library",
+      "name": "source-map-support",
+      "version": "0.5.21",
+      "purl": "pkg:npm/source-map-support@0.5.21",
+      "bom-ref": "npm/source-map-support@0.5.21"
+    },
+    {
+      "type": "library",
+      "name": "style-loader",
+      "version": "3.3.4",
+      "purl": "pkg:npm/style-loader@3.3.4",
+      "bom-ref": "npm/style-loader@3.3.4"
+    },
+    {
+      "type": "library",
+      "name": "stylelint",
+      "version": "15.11.0",
+      "purl": "pkg:npm/stylelint@15.11.0",
+      "bom-ref": "npm/stylelint@15.11.0"
+    },
+    {
+      "type": "library",
+      "name": "stylelint-config-recommended",
+      "version": "12.0.0",
+      "purl": "pkg:npm/stylelint-config-recommended@12.0.0",
+      "bom-ref": "npm/stylelint-config-recommended@12.0.0"
+    },
+    {
+      "type": "library",
+      "name": "ts-loader",
+      "version": "9.5.1",
+      "purl": "pkg:npm/ts-loader@9.5.1",
+      "bom-ref": "npm/ts-loader@9.5.1"
+    },
+    {
+      "type": "library",
+      "name": "ts-node",
+      "version": "10.9.2",
+      "purl": "pkg:npm/ts-node@10.9.2",
+      "bom-ref": "npm/ts-node@10.9.2"
+    },
+    {
+      "type": "library",
+      "name": "tsc-alias",
+      "version": "1.8.17",
+      "purl": "pkg:npm/tsc-alias@1.8.17",
+      "bom-ref": "npm/tsc-alias@1.8.17"
+    },
+    {
+      "type": "library",
+      "name": "typescript",
+      "version": "5.5.4",
+      "purl": "pkg:npm/typescript@5.5.4",
+      "bom-ref": "npm/typescript@5.5.4"
+    },
+    {
+      "type": "library",
+      "name": "url-loader",
+      "version": "4.1.1",
+      "purl": "pkg:npm/url-loader@4.1.1",
+      "bom-ref": "npm/url-loader@4.1.1"
+    },
+    {
+      "type": "library",
+      "name": "vitest",
+      "version": "4.1.10",
+      "purl": "pkg:npm/vitest@4.1.10",
+      "bom-ref": "npm/vitest@4.1.10"
+    },
+    {
+      "type": "library",
+      "name": "webpack",
+      "version": "5.105.0",
+      "purl": "pkg:npm/webpack@5.105.0",
+      "bom-ref": "npm/webpack@5.105.0"
+    },
+    {
+      "type": "library",
+      "name": "webpack-bundle-analyzer",
+      "version": "4.10.2",
+      "purl": "pkg:npm/webpack-bundle-analyzer@4.10.2",
+      "bom-ref": "npm/webpack-bundle-analyzer@4.10.2"
+    },
+    {
+      "type": "library",
+      "name": "webpack-cli",
+      "version": "5.1.4",
+      "purl": "pkg:npm/webpack-cli@5.1.4",
+      "bom-ref": "npm/webpack-cli@5.1.4"
+    },
+    {
+      "type": "library",
+      "name": "webpack-dev-server",
+      "version": "5.2.2",
+      "purl": "pkg:npm/webpack-dev-server@5.2.2",
+      "bom-ref": "npm/webpack-dev-server@5.2.2"
+    },
+    {
+      "type": "library",
+      "name": "webpack-merge",
+      "version": "5.8.0",
+      "purl": "pkg:npm/webpack-merge@5.8.0",
+      "bom-ref": "npm/webpack-merge@5.8.0"
+    },
+    {
+      "type": "library",
+      "name": "xml2js",
+      "version": "0.5.0",
+      "purl": "pkg:npm/xml2js@0.5.0",
+      "bom-ref": "npm/xml2js@0.5.0"
+    },
+    {
+      "type": "library",
+      "name": "dicom-microscopy-viewer",
+      "version": "0.48.6",
+      "purl": "pkg:npm/dicom-microscopy-viewer@0.48.6",
+      "bom-ref": "npm/dicom-microscopy-viewer@0.48.6"
+    },
+    {
+      "type": "library",
+      "name": "@babel/runtime-corejs2",
+      "version": "7.26.10",
+      "purl": "pkg:npm/@babel/runtime-corejs2@7.26.10",
+      "bom-ref": "npm/@babel/runtime-corejs2@7.26.10"
+    },
+    {
+      "type": "library",
+      "name": "buffer",
+      "version": "6.0.3",
+      "purl": "pkg:npm/buffer@6.0.3",
+      "bom-ref": "npm/buffer@6.0.3"
+    },
+    {
+      "type": "library",
+      "name": "dcmjs",
+      "version": "0.52.0",
+      "purl": "pkg:npm/dcmjs@0.52.0",
+      "bom-ref": "npm/dcmjs@0.52.0"
+    },
+    {
+      "type": "library",
+      "name": "gl-matrix",
+      "version": "3.4.3",
+      "purl": "pkg:npm/gl-matrix@3.4.3",
+      "bom-ref": "npm/gl-matrix@3.4.3"
+    },
+    {
+      "type": "library",
+      "name": "ndarray",
+      "version": "1.0.19",
+      "purl": "pkg:npm/ndarray@1.0.19",
+      "bom-ref": "npm/ndarray@1.0.19"
+    },
+    {
+      "type": "library",
+      "name": "@cornerstonejs/core",
+      "version": "5.11.3",
+      "purl": "pkg:npm/@cornerstonejs/core@5.11.3",
+      "bom-ref": "npm/@cornerstonejs/core@5.11.3"
+    },
+    {
+      "type": "library",
+      "name": "@cornerstonejs/metadata",
+      "version": "5.11.3",
+      "purl": "pkg:npm/@cornerstonejs/metadata@5.11.3",
+      "bom-ref": "npm/@cornerstonejs/metadata@5.11.3"
+    },
+    {
+      "type": "library",
+      "name": "@cornerstonejs/tools",
+      "version": "5.11.3",
+      "purl": "pkg:npm/@cornerstonejs/tools@5.11.3",
+      "bom-ref": "npm/@cornerstonejs/tools@5.11.3"
+    },
+    {
+      "type": "library",
+      "name": "lodash.clonedeep",
+      "version": "4.5.0",
+      "purl": "pkg:npm/lodash.clonedeep@4.5.0",
+      "bom-ref": "npm/lodash.clonedeep@4.5.0"
+    },
+    {
+      "type": "library",
+      "name": "onnxruntime-common",
+      "version": "1.17.1",
+      "purl": "pkg:npm/onnxruntime-common@1.17.1",
+      "bom-ref": "npm/onnxruntime-common@1.17.1"
+    },
+    {
+      "type": "library",
+      "name": "onnxruntime-web",
+      "version": "1.17.1",
+      "purl": "pkg:npm/onnxruntime-web@1.17.1",
+      "bom-ref": "npm/onnxruntime-web@1.17.1"
+    },
+    {
+      "type": "library",
+      "name": "@cornerstonejs/utils",
+      "version": "5.11.3",
+      "purl": "pkg:npm/@cornerstonejs/utils@5.11.3",
+      "bom-ref": "npm/@cornerstonejs/utils@5.11.3"
+    },
+    {
+      "type": "library",
+      "name": "@kitware/vtk.js",
+      "version": "36.4.1",
+      "purl": "pkg:npm/@kitware/vtk.js@36.4.1",
+      "bom-ref": "npm/@kitware/vtk.js@36.4.1"
+    },
+    {
+      "type": "library",
+      "name": "comlink",
+      "version": "4.4.2",
+      "purl": "pkg:npm/comlink@4.4.2",
+      "bom-ref": "npm/comlink@4.4.2"
+    },
+    {
+      "type": "library",
+      "name": "loglevel",
+      "version": "1.9.2",
+      "purl": "pkg:npm/loglevel@1.9.2",
+      "bom-ref": "npm/loglevel@1.9.2"
+    },
+    {
+      "type": "library",
+      "name": "@cornerstonejs/codec-charls",
+      "version": "1.2.7",
+      "purl": "pkg:npm/@cornerstonejs/codec-charls@1.2.7",
+      "bom-ref": "npm/@cornerstonejs/codec-charls@1.2.7"
+    },
+    {
+      "type": "library",
+      "name": "@cornerstonejs/codec-libjpeg-turbo-8bit",
+      "version": "1.2.7",
+      "purl": "pkg:npm/@cornerstonejs/codec-libjpeg-turbo-8bit@1.2.7",
+      "bom-ref": "npm/@cornerstonejs/codec-libjpeg-turbo-8bit@1.2.7"
+    },
+    {
+      "type": "library",
+      "name": "@cornerstonejs/codec-libjxl",
+      "version": "1.1.1",
+      "purl": "pkg:npm/@cornerstonejs/codec-libjxl@1.1.1",
+      "bom-ref": "npm/@cornerstonejs/codec-libjxl@1.1.1"
+    },
+    {
+      "type": "library",
+      "name": "@cornerstonejs/codec-openjpeg",
+      "version": "1.3.6",
+      "purl": "pkg:npm/@cornerstonejs/codec-openjpeg@1.3.6",
+      "bom-ref": "npm/@cornerstonejs/codec-openjpeg@1.3.6"
+    },
+    {
+      "type": "library",
+      "name": "@cornerstonejs/codec-openjph",
+      "version": "2.4.11",
+      "purl": "pkg:npm/@cornerstonejs/codec-openjph@2.4.11",
+      "bom-ref": "npm/@cornerstonejs/codec-openjph@2.4.11"
+    },
+    {
+      "type": "library",
+      "name": "@cornerstonejs/jpeg-lossless-decoder-js",
+      "version": "2.2.1",
+      "purl": "pkg:npm/@cornerstonejs/jpeg-lossless-decoder-js@2.2.1",
+      "bom-ref": "npm/@cornerstonejs/jpeg-lossless-decoder-js@2.2.1"
+    },
+    {
+      "type": "library",
+      "name": "dicom-parser",
+      "version": "1.8.21",
+      "purl": "pkg:npm/dicom-parser@1.8.21",
+      "bom-ref": "npm/dicom-parser@1.8.21"
+    },
+    {
+      "type": "library",
+      "name": "pako",
+      "version": "2.1.0",
+      "purl": "pkg:npm/pako@2.1.0",
+      "bom-ref": "npm/pako@2.1.0"
+    },
+    {
+      "type": "library",
+      "name": "uuid",
+      "version": "9.0.1",
+      "purl": "pkg:npm/uuid@9.0.1",
+      "bom-ref": "npm/uuid@9.0.1"
+    },
+    {
+      "type": "library",
+      "name": "@itk-wasm/morphological-contour-interpolation",
+      "version": "1.1.0",
+      "purl": "pkg:npm/@itk-wasm/morphological-contour-interpolation@1.1.0",
+      "bom-ref": "npm/@itk-wasm/morphological-contour-interpolation@1.1.0"
+    },
+    {
+      "type": "library",
+      "name": "itk-wasm",
+      "version": "1.0.0-b.165",
+      "purl": "pkg:npm/itk-wasm@1.0.0-b.165",
+      "bom-ref": "npm/itk-wasm@1.0.0-b.165"
+    },
+    {
+      "type": "library",
+      "name": "nifti-reader-js",
+      "version": "0.6.9",
+      "purl": "pkg:npm/nifti-reader-js@0.6.9",
+      "bom-ref": "npm/nifti-reader-js@0.6.9"
+    },
+    {
+      "type": "library",
+      "name": "@icr/polyseg-wasm",
+      "version": "0.4.0",
+      "purl": "pkg:npm/@icr/polyseg-wasm@0.4.0",
+      "bom-ref": "npm/@icr/polyseg-wasm@0.4.0"
+    },
+    {
+      "type": "library",
+      "name": "@types/offscreencanvas",
+      "version": "2019.7.3",
+      "purl": "pkg:npm/@types/offscreencanvas@2019.7.3",
+      "bom-ref": "npm/@types/offscreencanvas@2019.7.3"
+    },
+    {
+      "type": "library",
+      "name": "clipper2-ts",
+      "version": "2.0.1",
+      "purl": "pkg:npm/clipper2-ts@2.0.1",
+      "bom-ref": "npm/clipper2-ts@2.0.1"
+    },
+    {
+      "type": "library",
+      "name": "lodash.get",
+      "version": "4.4.2",
+      "purl": "pkg:npm/lodash.get@4.4.2",
+      "bom-ref": "npm/lodash.get@4.4.2"
+    },
+    {
+      "type": "library",
+      "name": "canvas",
+      "version": "3.2.0",
+      "purl": "pkg:npm/canvas@3.2.0",
+      "bom-ref": "npm/canvas@3.2.0"
+    },
+    {
+      "type": "library",
+      "name": "@types/d3-array",
+      "version": "3.2.1",
+      "purl": "pkg:npm/@types/d3-array@3.2.1",
+      "bom-ref": "npm/@types/d3-array@3.2.1"
+    },
+    {
+      "type": "library",
+      "name": "@types/d3-interpolate",
+      "version": "3.0.4",
+      "purl": "pkg:npm/@types/d3-interpolate@3.0.4",
+      "bom-ref": "npm/@types/d3-interpolate@3.0.4"
+    },
+    {
+      "type": "library",
+      "name": "d3-array",
+      "version": "3.2.4",
+      "purl": "pkg:npm/d3-array@3.2.4",
+      "bom-ref": "npm/d3-array@3.2.4"
+    },
+    {
+      "type": "library",
+      "name": "d3-interpolate",
+      "version": "3.0.1",
+      "purl": "pkg:npm/d3-interpolate@3.0.1",
+      "bom-ref": "npm/d3-interpolate@3.0.1"
+    }
+  ]
+}
